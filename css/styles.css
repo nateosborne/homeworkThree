@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -23,11 +24,16 @@ p {
 @media screen and (max-width: 850px) {
   .packages-container {
     width: 818px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 900px;
     width: 235px;
     margin-left: 33%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .packages-container .package1 {
     margin-bottom: 50px;
@@ -38,7 +44,9 @@ p {
 }
 @media screen and (max-width: 850px) {
   .top-boxes {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .top-boxes .holder input {
     max-width: 300px;
@@ -46,7 +54,9 @@ p {
 }
 @media screen and (max-width: 850px) {
   .middle-boxes {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .middle-boxes .holder input {
     max-width: 300px;
@@ -54,7 +64,9 @@ p {
 }
 @media screen and (max-width: 850px) {
   .message-box {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .message-box .holder input {
     max-width: 450px;
@@ -64,7 +76,9 @@ p {
   .submit {
     max-width: 450px;
     margin: 0 auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 850px) {
@@ -72,7 +86,9 @@ p {
     max-width: 850px;
   }
   .footer .footer-container {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 500px;
   }
 }
@@ -81,9 +97,15 @@ nav {
   height: 85px;
   margin: 0 auto;
   border-bottom: 2px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   z-index: 99;
 }
@@ -112,6 +134,7 @@ nav {
 .banner {
   max-width: 1280px;
   height: 500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -119,9 +142,15 @@ nav {
   margin: -80px auto 0 auto;
 }
 .banner .banner-header1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .banner .banner-header1 p {
   font-family: ProximaNovaCondensed;
@@ -130,9 +159,15 @@ nav {
   margin-top: 160px;
 }
 .banner .banner-header2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .banner .banner-header2 p {
   margin-top: 30px;
@@ -147,9 +182,15 @@ nav {
   height: 40px;
   width: 120px;
   background-color: #79addc;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 50px;
 }
 .banner .read-more p {
@@ -167,12 +208,17 @@ nav {
   width: 818px;
   height: 300px;
   margin-top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form-content .packages-container .package1 {
   width: 235px;
   height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/tour/tour-01.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,8 +226,12 @@ nav {
 }
 .form-content .packages-container .package1 .package-header {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form-content .packages-container .package1 .package-header p {
   color: white;
@@ -189,8 +239,12 @@ nav {
   font-size: 60px;
 }
 .form-content .packages-container .package1 .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form-content .packages-container .package1 .money p {
   color: white;
@@ -202,9 +256,15 @@ nav {
   width: 133px;
   height: 40px;
   background-color: #79addc;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 100px;
 }
 .form-content .packages-container .package1 .learn-more p {
@@ -215,6 +275,7 @@ nav {
 .form-content .packages-container .package2 {
   width: 235px;
   height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/tour/tour-02.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -222,8 +283,12 @@ nav {
 }
 .form-content .packages-container .package2 .package-header {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form-content .packages-container .package2 .package-header p {
   color: white;
@@ -231,8 +296,12 @@ nav {
   font-size: 60px;
 }
 .form-content .packages-container .package2 .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form-content .packages-container .package2 .money p {
   color: white;
@@ -244,9 +313,15 @@ nav {
   width: 133px;
   height: 40px;
   background-color: #79addc;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 100px;
 }
 .form-content .packages-container .package2 .learn-more p {
@@ -257,6 +332,7 @@ nav {
 .form-content .packages-container .package3 {
   width: 235px;
   height: 300px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/tour/tour-03.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,8 +340,12 @@ nav {
 }
 .form-content .packages-container .package3 .package-header {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form-content .packages-container .package3 .package-header p {
   color: white;
@@ -273,8 +353,12 @@ nav {
   font-size: 60px;
 }
 .form-content .packages-container .package3 .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form-content .packages-container .package3 .money p {
   color: white;
@@ -286,9 +370,15 @@ nav {
   width: 133px;
   height: 40px;
   background-color: #79addc;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 100px;
 }
 .form-content .packages-container .package3 .learn-more p {
@@ -303,9 +393,15 @@ nav {
 }
 .form-content .top-boxes {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .form-content .top-boxes .holder {
   position: relative;
@@ -327,9 +423,15 @@ nav {
 }
 .form-content .middle-boxes {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .form-content .middle-boxes .check {
   font-family: GillSans;
@@ -354,13 +456,21 @@ nav {
   right: 20px;
 }
 .form-content .bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form-content .bottom-container .bottom-boxes {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .form-content .bottom-container .bottom-boxes .check {
   font-family: GillSans;
@@ -388,6 +498,8 @@ nav {
 }
 .form-content .message-box {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .form-content .message-box .holder {
@@ -416,9 +528,15 @@ nav {
   border-radius: 100px;
   margin-top: 37px;
   margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .form-content .submit p {
   margin-top: 15px;
@@ -439,14 +557,22 @@ nav {
   background-color: #79addc;
   height: 100px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer .footer-container {
   width: 980px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer .footer-container .logo-footer {
   width: 92px;
@@ -466,5 +592,3 @@ nav {
   color: white;
   font-size: 20px;
 }
-
-/*# sourceMappingURL=styles.css.map */
